@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
     <title>Ostebiks</title>
 </head>
 <body>
-    
-    <script src="app.js"></script>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <a href="/"><img src="./media/images/white-logo.png" alt="logo" class="logo"></a>
+                <a href="/">Forside</a>
+                <a href="/opskrifter">Opskrifter</a>
+                <a href="/nyheder">Nyheder</a>
+                <a href="/">Kontakt</a>
+            </nav>
+        </header>
+        <video class="hero" loop muted autoplay>
+            <source src="./media/cheese-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <section class="discover-cards">
+            <a href="#products" class="discover-card">
+                <img src="./media/images/cheese1.jpg">
+                <p>Tag et kig på <span class="blue">vores oste</span></p>
+            </a>
+            <a href="/nyheder" class="discover-card">
+                <img src="./media/images/cheese2.jpg">
+                <p>læs vores <span class="yellow">oste nyheder</span></p>
+            </a>
+            <a href="/opskrifter" class="discover-card">
+                <img src="./media/images/cheese3.jpg">
+                <p>Udforsk vores <span class="pink">oste opskrifter</span></p>
+            </a>
+        </section>
+        <section class="product-container" id="p">
+            <nav>
+                <h2>VORES PRODUKTER</h2>
+                <div class="arrows">
+                    <a href="" id="previous"><i class="fas fa-chevron-left"></i></a>
+                    <a href="" id="next"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </nav>
+            <div class="products">
+            </div>
+        </section>
+    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
