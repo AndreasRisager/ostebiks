@@ -8,7 +8,7 @@ img{
     height: auto;
 }
 #wrapper{
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
 }
@@ -125,7 +125,7 @@ video.hero{
     text-align: right;
 }
 .product img{
-    max-width: 150px;
+    width: 150px;
     height: 180px;
     object-fit: contain;
     margin: 0 auto;
@@ -145,4 +145,48 @@ video.hero{
 }
 .product:nth-child(5n+5) {
     background-color: #d99705;
+}
+@media only screen and (max-width: 840px) {
+    .products {
+        flex-wrap: wrap;
+    }
+    .product {
+        flex: 50%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .discover-cards {
+        padding: 2em 3%;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+    .discover-card p {
+        font-size: 10vw;
+        width: 40vw;
+    }
+
+    .product-container{
+        padding: 2em 3%;
+    }
+}
+@media only screen and (max-width: 465px) {
+    header nav {
+        flex-direction: column;
+    }
+    header nav a {
+        padding: 1em 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .product-container nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width: 330px) {
+    .products {
+        flex-direction: column;
+        flex-wrap: unset;
+    }
 }
